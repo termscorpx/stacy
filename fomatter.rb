@@ -14,11 +14,16 @@ Dir.glob('*.html') do |filename|
     if link_node['href'] == '.'
       link_node['href'] = 'stacy.html'
     end
+
+    if link_node['href'].include? 'assets/normal'
+      link_node['href'].gsub('assets', filename + '_files')
+    end
   end
 
   doc.css('.lookbook-nav__link').each do |nav_node|
     nav_node['href'] += '.html' unless nav_node['href'].end_with?('.html')
   end
+
 
   File.write(filename, doc.to_html)
 end
