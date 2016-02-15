@@ -10,7 +10,10 @@ Dir.glob('*.html') do |filename|
       link_node['href'] = link_node['href'].gsub 'https://termsdev.co/stacy', '.'
       link_node['href'] +='.html' if link_node['href'] =~ /https:\/\/termsdev.co\/stacy\/.*/
     end
-    # link_node['href'] = link_node['href'].gsub('..html', 'stacy.html')
+
+    if link_node['href'] == '.'
+      link_node['href'] = 'stacy.html'
+    end
   end
 
   File.write(filename, doc.to_html)
