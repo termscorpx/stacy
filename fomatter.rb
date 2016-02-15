@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'byebug'
 
 
 Dir.glob('*.html') do |filename|
@@ -15,9 +16,10 @@ Dir.glob('*.html') do |filename|
       link_node['href'] = 'stacy.html'
     end
 
-    if link_node['href'].include? 'assets/normal'
-      link_node['href'].gsub('assets', filename + '_files')
-    end
+  end
+
+  doc.css('.lookbook-links__img img').each do |deal_img_node|
+    deal_img_node['src'] = deal_img_node['src'].gsub('assets', filename.gsub('.html', '') + '_files')
   end
 
   doc.css('.lookbook-nav__link').each do |nav_node|
