@@ -2,13 +2,12 @@ require 'nokogiri'
 
 
 Dir.glob('*.html') do |filename|
-  File.open(filename, 'w') do |file|
-    doc = Nokogiri::HTML.parse(file)
+  html = File.read(filename)
+  doc = Nokogiri::HTML(html)
     
-    doc.css('a').each do |link_node|
-      link_node['href'] = link_node['href'].gsub('https://termsdev.co', '.')
-    end
-
-    file.write doc.to_html
+  doc.css('a').each do |link_node|
+    link_node['href'] = link_node['href'].gsub('https://termsdev.co/stacy', '.')
   end
+
+  File.write(filename, doc.to_html)
 end
