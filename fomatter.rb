@@ -6,9 +6,9 @@ Dir.glob('*.html') do |filename|
   doc = Nokogiri::HTML(html)
     
   doc.css('a').each do |link_node|
-    if link_node['href'].starts_with?('https://termsdev.co/stacy')
-      link_node['href']['https://termsdev.co/stacy'] =  '.'
-      link_node['href'] << '.href'
+    if link_node['href'].start_with?('https://termsdev.co/stacy')
+      link_node['href'] = link_node['href'].gsub 'https://termsdev.co/stacy', '.'
+      link_node['href'] +='.html' if link_node['href'] =~ /https:\/\/termsdev.co\/stacy\/.*/
     end
     # link_node['href'] = link_node['href'].gsub('..html', 'stacy.html')
   end
