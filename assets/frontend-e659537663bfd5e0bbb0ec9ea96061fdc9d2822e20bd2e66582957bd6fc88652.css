@@ -4487,8 +4487,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/web-assets/fontawesome-webfont-e219ece8f4d3e4ac455ef31cd3a7c7b5057ea68a109937fc26b03c6e99ee9322.eot?v=4.5.0");
-  src: url("/web-assets/fontawesome-webfont-e219ece8f4d3e4ac455ef31cd3a7c7b5057ea68a109937fc26b03c6e99ee9322.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("/web-assets/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0") format("woff2"), url("/web-assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0") format("woff"), url("/web-assets/fontawesome-webfont-7b5a4320fba0d4c8f79327645b4b9cc875a2ec617a557e849b813918eb733499.ttf?v=4.5.0") format("truetype"), url("/web-assets/fontawesome-webfont-d67041fe5d50eef9ef671643968f7ce6b130eaaaaa2ce4d496b18d0a33aeb87b.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("./fontawesome-webfont-e219ece8f4d3e4ac455ef31cd3a7c7b5057ea68a109937fc26b03c6e99ee9322.eot?v=4.5.0");
+  src: url("./fontawesome-webfont-e219ece8f4d3e4ac455ef31cd3a7c7b5057ea68a109937fc26b03c6e99ee9322.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("./fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0") format("woff2"), url("./fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0") format("woff"), url("./fontawesome-webfont-7b5a4320fba0d4c8f79327645b4b9cc875a2ec617a557e849b813918eb733499.ttf?v=4.5.0") format("truetype"), url("./fontawesome-webfont-d67041fe5d50eef9ef671643968f7ce6b130eaaaaa2ce4d496b18d0a33aeb87b.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -8128,7 +8128,7 @@ a:focus {
 
 /* line 2, /var/www/web/releases/20160209-020141/apps/frontend/app/assets/stylesheets/common/_navbar.scss */
 .navbar {
-  background-image: url(/web-assets/pattern-264500f6a50e0297d7c4f5936a9611148e142106912fa87c83b2cd5302484334.png);
+  background-image: url(./pattern-264500f6a50e0297d7c4f5936a9611148e142106912fa87c83b2cd5302484334.png);
   margin-bottom: 0;
   border: 0;
   border-radius: 0;
@@ -9041,7 +9041,7 @@ a:focus {
 
 /* line 2, /var/www/web/releases/20160209-020141/apps/frontend/app/assets/stylesheets/components/_user.scss */
 .user {
-  background: #212121 url(/web-assets/pattern-264500f6a50e0297d7c4f5936a9611148e142106912fa87c83b2cd5302484334.png);
+  background: #212121 url(./pattern-264500f6a50e0297d7c4f5936a9611148e142106912fa87c83b2cd5302484334.png);
   padding: 20px 0;
   text-align: left;
 }
